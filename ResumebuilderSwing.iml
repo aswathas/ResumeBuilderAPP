@@ -25,5 +25,28 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="mysql-connector-j-9.0.0" level="project" />
+    <orderEntry type="library" name="mysql-connector-j-9.0.01" level="project" />
+    <orderEntry type="library" name="kernel-7.1.10" level="project" />
+    <orderEntry type="library" name="layout-7.1.10" level="project" />
+    <orderEntry type="library" name="io-7.1.10" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/slf4j-api-1.7.36.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/slf4j-simple-1.7.36.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
