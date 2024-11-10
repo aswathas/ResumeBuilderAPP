@@ -23,6 +23,9 @@ public class Resume {
     private String degree;
     private String university;
     private String graduationYear;
+    private String tenthMark;
+    private String twelfthMark;
+    private String profileImagePath;
 
     private int id;
 
@@ -49,6 +52,30 @@ public class Resume {
 
     public void setGraduationYear(String graduationYear) {
         this.graduationYear = graduationYear;
+    }
+
+    public String getTenthMark() {
+        return tenthMark;
+    }
+
+    public void setTenthMark(String tenthMark) {
+        this.tenthMark = tenthMark;
+    }
+
+    public String getTwelfthMark() {
+        return twelfthMark;
+    }
+
+    public void setTwelfthMark(String twelfthMark) {
+        this.twelfthMark = twelfthMark;
+    }
+
+    public String getProfileImagePath() {
+        return profileImagePath;
+    }
+
+    public void setProfileImagePath(String profileImagePath) {
+        this.profileImagePath = profileImagePath;
     }
 
     // Getters and Setters for other fields (Existing)
