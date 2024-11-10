@@ -36,13 +36,20 @@
             <artifactId>forms</artifactId>
             <version>7.1.15</version>
         </dependency>
-        <!-- Add MigLayout for better layout management -->
+        
+        <!-- SLF4J API -->
         <dependency>
-            <groupId>com.miglayout</groupId>
-            <artifactId>miglayout-swing</artifactId>
-            <version>11.0</version>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.36</version>
         </dependency>
         
+        <!-- SLF4J Binding for Logback -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.10</version>
+        </dependency>
         
         <!-- SQLite JDBC Driver -->
         <dependency>
@@ -51,7 +58,6 @@
             <version>3.36.0.3</version>
         </dependency>
     </dependencies>
-   
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
