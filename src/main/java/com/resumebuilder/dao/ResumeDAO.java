@@ -6,9 +6,15 @@ import java.sql.*;
 
 // Database connection class
 class DatabaseConnection {
-    private static final String URL = "jdbc:mysql://localhost:3306/student"; // Update with your database name
-    private static final String USER = "root"; // Update with your username
-    private static final String PASSWORD = "Shashwat"; // Update with your password
+    private static final String URL = env("DB_URL", "jdbc:mysql://localhost:3306/student");
+    private static final String USER = env("DB_USER", "root");
+    // No default on purpose: a missing DB_PASSWORD must fail loudly, not connect with a baked-in secret.
+    private static final String PASSWORD = env("DB_PASSWORD", "");
+
+    private static String env(String name, String fallback) {
+        String value = System.getenv(name);
+        return value == null || value.isEmpty() ? fallback : value;
+    }
 
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(URL, USER, PASSWORD);

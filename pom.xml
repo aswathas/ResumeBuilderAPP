@@ -51,6 +51,14 @@
             <version>1.2.10</version>
         </dependency>
         
+        <!-- MySQL JDBC Driver: ResumeDAO connects to MySQL, without this the driver is not on the classpath -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <version>9.1.0</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- SQLite JDBC Driver -->
         <dependency>
             <groupId>org.xerial</groupId>
